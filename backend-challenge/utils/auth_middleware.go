@@ -8,12 +8,11 @@ import (
 )
 
 // testing for sample validation
-var ValidAPIKey = "apitest"
+var ValidAPIKey = "create_order"
 
 func RequireAPIKey(next http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		apiKey := r.Header.Get("api_key")
-		log.Printf("test", r.Header)
 
 		if apiKey != ValidAPIKey {
 			log.Printf("Unauthorized request", "provided_key", apiKey)

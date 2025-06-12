@@ -11,7 +11,8 @@ type OrderRequest struct {
 }
 
 type OrderResponse struct {
-	ID       string      `json:"id"`
-	Items    []OrderItem `json:"items"`
-	Products []Product   `json:"products"`
+	ID         string      `json:"id"`
+	Items      []OrderItem `json:"items"`
+	Products   []Product   `json:"products"`
+	CouponCode string      `json:"couponCode,omitempty"` // Only set if valid
 }
