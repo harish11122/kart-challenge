@@ -6,10 +6,11 @@ import (
 	"net/http"
 	"time"
 
+	"backend-challenge/models"
+	"backend-challenge/utils"
+
 	"github.com/go-chi/render"
 	"github.com/google/uuid"
-	"github.com/harish11122/kart-challenge/advanced-challenge/backend-challenge/models"
-	"github.com/harish11122/kart-challenge/advanced-challenge/backend-challenge/utils"
 )
 
 func init() {

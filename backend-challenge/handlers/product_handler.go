@@ -4,9 +4,10 @@ import (
 	"net/http"
 	"strconv"
 
+	"backend-challenge/models"
+
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/render"
-	"github.com/harish11122/kart-challenge/advanced-challenge/backend-challenge/models"
 )
 
 var products = models.SampleProducts

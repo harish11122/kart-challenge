@@ -16,7 +16,7 @@ var (
 // LoadValidPromoCodes reads the valid coupons file once and loads into memory
 func LoadValidPromoCodes() {
 	once.Do(func() {
-		file := "valid_coupons.txt"
+		file := "utils/valid_coupons.txt"
 
 		f, err := os.Open(file)
 		if err != nil {

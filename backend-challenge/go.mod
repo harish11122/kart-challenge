@@ -1,4 +1,4 @@
-module github.com/harish11122/kart-challenge/advanced-challenge/backend-challenge
+module backend-challenge
 
 go 1.24.4
 

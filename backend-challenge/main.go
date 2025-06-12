@@ -4,11 +4,12 @@ import (
 	"log"
 	"net/http"
 
+	"backend-challenge/handlers"
+	"backend-challenge/utils"
+
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"
 	"github.com/go-chi/render"
-	"github.com/harish11122/kart-challenge/advanced-challenge/backend-challenge/handlers"
-	"github.com/harish11122/kart-challenge/advanced-challenge/backend-challenge/utils"
 )
 
 func main() {
