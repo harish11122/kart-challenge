@@ -1,7 +1,6 @@
 package utils
 
 import (
-	"log"
 	"net/http"
 
 	"github.com/go-chi/render"
@@ -15,7 +14,6 @@ func RequireAPIKey(next http.Handler) http.Handler {
 		apiKey := r.Header.Get("api_key")
 
 		if apiKey != ValidAPIKey {
-			log.Printf("Unauthorized request", "provided_key", apiKey)
 			render.Status(r, http.StatusUnauthorized)
 			render.JSON(w, r, map[string]string{
 				"error":   "unauthorized",
